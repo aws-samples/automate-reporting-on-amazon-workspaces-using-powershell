@@ -1,17 +1,7 @@
-## My Project
+## Amazon Workspaces Automate Reporting Using PowerShell
 
-TODO: Fill this README out!
+Sample code to query WorkSpaces API, Active Directory, AWS Virtual Private Cloud (VPC), and CloudWatch Metrics to report on Amazon Workspaces using PowerShell.
 
-Be sure to:
+## License Summary
 
-* Change the title in this README
-* Edit your repository description on GitHub
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+This sample code is made available under a modified MIT license. See the LICENSE file.
