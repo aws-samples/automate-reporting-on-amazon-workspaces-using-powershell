@@ -162,7 +162,7 @@ foreach ($WorkSpace in $WorkSpaces){
     Try
     {
         $dimension1.set_Value($WorkSpace.WorkspaceId)
-        $data = Get-CWMetricStatistics -Namespace "AWS/WorkSpaces" -MetricName "ConnectionSuccess" -UtcStartTime $StartDate -UtcEndTime $EndDate -Period $period -Statistics @("Maximum") -Dimensions @($dimension1)
+        $data = Get-CWMetricStatistics -Region $Region -Namespace "AWS/WorkSpaces" -MetricName "ConnectionSuccess" -UtcStartTime $StartDate -UtcEndTime $EndDate -Period $period -Statistics @("Maximum") -Dimensions @($dimension1)
         if(($data.datapoints.Maximum | sort -Unique | select -Last 1) -ge 1){
             # logins found
             $WorkSpaceUnused = $false
