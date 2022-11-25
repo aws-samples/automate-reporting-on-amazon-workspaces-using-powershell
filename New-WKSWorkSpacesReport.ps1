@@ -260,6 +260,8 @@ foreach ($WorkSpace in $WorkSpaces){
     # Decrement the count of WorkSpaces so the user sees a progress indicator
     $WorkSpacesCount--
     Write-Host "$($WorkSpacesCount) WorkSpaces remain"
+    # Delay to prevent AWS API Throttling
+	Start-Sleep -Milliseconds 750
 }
 
 # Write the report to disk
