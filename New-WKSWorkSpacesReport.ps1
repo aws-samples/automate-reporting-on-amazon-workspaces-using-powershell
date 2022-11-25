@@ -261,7 +261,7 @@ foreach ($WorkSpace in $WorkSpaces){
     $WorkSpacesCount--
     Write-Host "$($WorkSpacesCount) WorkSpaces remain"
     # Delay to prevent AWS API Throttling
-	Start-Sleep -Milliseconds 750
+    Start-Sleep -Milliseconds 750
 }
 
 # Write the report to disk
